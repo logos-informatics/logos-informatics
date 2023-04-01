@@ -90,4 +90,10 @@
     padding-right: 2em;
     font-weight: 700;
   }
+
+
+  font-size: 80%;
+  @include breakpoint($small) {
+    font-size: 100%;
+  }
 }

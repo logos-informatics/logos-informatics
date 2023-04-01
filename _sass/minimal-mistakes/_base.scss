@@ -355,7 +355,12 @@ input[type="submit"],
 }
 
 .client-logo {
-  padding: 2%
+  padding: 2%;
+  
+  width: 50%;
+  @include breakpoint(819px) {
+    width: auto;
+  }
 }
 
 .client-logo-link {

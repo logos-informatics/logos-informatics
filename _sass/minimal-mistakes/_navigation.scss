@@ -179,6 +179,11 @@
   min-height: $nav-height;
   background: $background-color;
 
+  justify-content: center;
+  @include breakpoint($small) {
+    justify-content: unset;
+  }
+
   a {
     display: block;
     margin: 0 1rem;
@@ -224,9 +229,14 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    flex: unset;
+    -ms-flex: unset;
     overflow: hidden;
+
+    @include breakpoint($small) {
+      flex: 1;
+      -ms-flex: 1;
+    }
 
     li {
       -webkit-box-flex: 0;
