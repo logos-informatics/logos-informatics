@@ -1,0 +1,11 @@
+{% assign purpose_list = page.purpose_list %}
+<ul>
+  {% for p in purpose_list %}
+  <li>
+    <p>
+      <strong>{{p.tagline}}</strong>
+      {{p.body}}
+    </p>
+  </li>
+  {% endfor %}
+</ul>

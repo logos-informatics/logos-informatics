@@ -2,26 +2,58 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#5e616c"
-  overlay_image: assets/img/health-informatics.png
+  image: assets/img/logos-informatics-logo-full.png
   caption:
-excerpt: 'Demystifying healthcare informatics'
+use_masthead: false
+purpose_list:
+  - tagline: "Terminology management and mapping."
+    body: "Our expertise extends to all major standardized health vocabularies, including SNOMED CT, LOINC, RxNorm, ICD-10-CM and other versions of ICD-10, CPT-4, CVX, Read Codes, and others)."
+
+  - tagline: "Clinical data modeling."
+    body: "We have experience modeling clinical data for electronic health record (EHR) and other clinical information systems, and with major standardized clinical information models, including OMOP, FHIR, and others."
+
+  - tagline: "Health data analytics,"
+    body: "including analysis of data from EHRs, clinical data repositories, disease registries, and patient-reported data"
+
+  - tagline: "Clinical knowledge modeling,"
+    body: "including composing clinical decision support (CDS) rules."
+
+  - tagline: "Functional and UI design"
+    body: "of clinician- and consumer-facing clinical software applications."
+
+  - tagline: "Strategic advising"
+    body: "related to clinical informatics and health information technology, including industry standards, product strategy, and competitive positioning."
+
 feature_row:
   - image_path: assets/img/eric-headshot.jpeg
     alt: "Eric Rose Headshot"
-    title: "Eric Rose"
-    excerpt: "Head of Clinical Informatics"
+    title: "Eric Rose, MD, FAAFP, FAMIA"
+    subtitle: "Chief Medical Informatics Officer"
+    excerpt: "Dr. Rose is a family physician and clinical informaticist (board-certified in both specialties), with over 20 years’ experience in design, development, and implementation of clinical information systems and computable content.  Dr. Rose has held informatics leadership roles in multiple industry sectors including health systems (University of Washington Medicine and the Veterans Health Administration), technology companies (Intelligent Medical Objects, Microsoft, McKesson), and biotech (TenSixteen Bio).  He has served as an advisor on clinical informatics topics to government (at both the federal and state level), professional societies, industry groups, and health technology startups, and also serves on the faculty of the University of Washington in the Department of Biomedical and Health Informatics."
     image_circle: true
 
   - image_path: assets/img/eleni-headshot.jpeg
     image_circle: true
     alt: "Eleni Ledesma Headshot"
     title: "Eleni Ledesma"
-    excerpt: "Cheif Business Officer"
+    subtitle: "Operations Manager"
+    excerpt: "Eleni Ledesma brings her outstanding people skills and sharp attention to detail to her role as Operations Manager at Logos Informatics.  She has extensive experience in the fields of human resources and nonprofit management, and is a graduate of the University of Washington."
+    reverse: true
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-# Who we are
+<h1 class="splash-section-header">WHAT WE DO</h1>
 
+<div class="splash-text-content">
+  <p>
+    Logos Informatics is a clinical informatics consultancy whose mission is to drive client success through optimal management of clinical data.  Our scope of practice includes:
+  </p>
+
+  {% include purpose_list id="purpose" %}
+</div>
+
+<h1 class="splash-section-header">WHO WE ARE</h1>
 {% include feature_row %}
+
+<h1 class="splash-section-header">OUR CLIENTS</h1>

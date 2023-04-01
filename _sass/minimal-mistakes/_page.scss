@@ -184,6 +184,11 @@ body {
   animation: $intro-transition;
   -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-content: center;
+  flex-wrap: wrap;
 
   &--overlay {
     position: relative;
@@ -234,8 +239,9 @@ body {
 }
 
 .page__hero-image {
-  width: 100%;
-  height: auto;
+  width: 65vw;
+  max-width: max-content;
+  height: fit-content;
   -ms-interpolation-mode: bicubic;
 }
 
