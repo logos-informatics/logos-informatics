@@ -27,7 +27,7 @@
 
           {% if f.subtitle %}
             <div class="archive__item-subtitle">
-              {{ f.subtitle | markdownify }}
+              <strong>{{ f.subtitle | markdownify }}</strong>
             </div>
           {% endif %}
 

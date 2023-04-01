@@ -1,10 +1,25 @@
 ---
 layout: splash
 permalink: /
+nav:
+  - url: "#purpose"
+    description: "PURPOSE"
+    title: "PURPOSE"
+
+  - url: "#team"
+    description: "OUR TEAM"
+    title: "OUR TEAM"
+
+  - url: "#clients"
+    description: "CLIENTS"
+    title: "CLIENTS"
+
+  - url: "#name"
+    description: "OUR NAME"
+    title: "OUR NAME"
 header:
   image: assets/img/logos-informatics-logo-full.png
   caption:
-use_masthead: false
 purpose_list:
   - tagline: "Terminology management and mapping."
     body: "Our expertise extends to all major standardized health vocabularies, including SNOMED CT, LOINC, RxNorm, ICD-10-CM and other versions of ICD-10, CPT-4, CVX, Read Codes, and others)."
@@ -39,21 +54,76 @@ feature_row:
     subtitle: "Operations Manager"
     excerpt: "Eleni Ledesma brings her outstanding people skills and sharp attention to detail to her role as Operations Manager at Logos Informatics.  She has extensive experience in the fields of human resources and nonprofit management, and is a graduate of the University of Washington."
     reverse: true
+
+clients:
+  - name: "Crescendo Health"
+    image_path: "assets/img/logo_ch.png"
+    link: "https://www.crescendo.health/"
+
+  - name: "Elimu Informatics"
+    image_path: "assets/img/logo_elimu.png"
+    link: "https://www.elimu.io/"
+
+  - name: "innoVetHEALTH"
+    image_path: "assets/img/logo_ivh.png"
+    link: "https://www.innovethealth.com/"
+
+  - name: "Lagrange Medical Software Inc."
+    image_path: "assets/img/logo_lms.png"
+
+  - name: "MCG Health"
+    image_path: "assets/img/logo_mcg.png"
+    link: "https://www.mcg.com/"
+
+  - name: "Redesign Health"
+    image_path: "assets/img/logo_rh.png"
+    link: "https://www.redesignhealth.com/"
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-<h1 class="splash-section-header">WHAT WE DO</h1>
-
-<div class="splash-text-content">
-  <p>
+<div class="section-header">
+  <h1 class="splash-section-title" id="purpose">WHAT WE DO</h1>
+  <p class="splash-section-title">
     Logos Informatics is a clinical informatics consultancy whose mission is to drive client success through optimal management of clinical data.  Our scope of practice includes:
   </p>
 
+</div>
+
+<div class="feature__wrapper">
   {% include purpose_list id="purpose" %}
 </div>
 
-<h1 class="splash-section-header">WHO WE ARE</h1>
+<div class="section-header">
+  <h1 class="splash-section-title" id="team">WHO WE ARE</h1>
+</div>
+
 {% include feature_row %}
 
-<h1 class="splash-section-header">OUR CLIENTS</h1>
+<div class="section-header">
+  <h1 class="splash-section-title" id="clients">OUR CLIENTS</h1>
+  <p class="splash-section-title">
+    Logos Informatics is proud to have served the following organizations
+  </p>
+</div>
+
+<div class="feature__wrapper">
+  <div class="client-logo-container">
+    {% for client in page.clients %}
+    <img class="client-logo" src="{{client.image_path}}" alt="{{client.name}}">
+    {% endfor %}
+  </div>
+</div>
+
+<div class="section-header">
+  <h1 class="splash-section-title" id="name">OUR NAME</h1>
+  <p class="splash-section-title">
+    Ἐν ἀρχη ηνὁ λόγος: "In the beginning was the word".
+  </p>
+</div>
+
+<div>
+  <p>
+  The ancient Greek word "logos" (λόγος) has been used in Western philosophy since the 5th century BCE.  Its meaning has evolved over the centuries, and it is variously translated as "discourse", "reason", or "word".  Aristotle used it to describe persuasion by means of logic, comprising one of the three modes of rhetoric, alongside pathos (persuasion by means of emotion) and ethos (persuasion by means of the speaker's eminence).  Stoic philosophers reimagined logos as a depersonalized force of reason pervading the entire universe, and from which human reason derives.  This conceptualization of logos was later identified with the divine in Jewish and Christian philosophy.  At Logos Informatics, we strive to manifest the ideal expressed in this word by optimizing how clinical data and knowledge is captured, processed, and communicated so that the light of reason can illuminate the work of health care, public health, and scientific research.
+  </p>
+</div>

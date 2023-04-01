@@ -339,8 +339,30 @@ input[type="submit"],
 }
 
 /* Misc Logos Informatics */
-.splash-section-header {
+.splash-section-title {
   text-align: center;
+}
+
+.clients-teaser {
+  text-align: center;
+}
+
+.client-logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.client-logo {
+  padding: 2%
+}
+
+.client-logo-link {
+  all: initial;
+}
+
+.section_header {
   padding-top: 5%;
   padding-bottom: 5%;
 }
