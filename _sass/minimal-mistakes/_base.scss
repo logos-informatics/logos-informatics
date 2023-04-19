@@ -361,6 +361,8 @@ input[type="submit"],
   @include breakpoint(819px) {
     width: auto;
   }
+
+  cursor: pointer;
 }
 
 .client-logo-link {

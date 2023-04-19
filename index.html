@@ -78,6 +78,10 @@ clients:
   - name: "Redesign Health"
     image_path: "assets/img/logo_rh.png"
     link: "https://www.redesignhealth.com/"
+
+  - name: "Institute for Systems Biology"
+    image_path: "assets/img/logo_isb.png"
+    link: "https://isbscience.org/"
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -110,7 +114,7 @@ clients:
 <div class="feature__wrapper">
   <div class="client-logo-container">
     {% for client in page.clients %}
-    <img class="client-logo" src="{{client.image_path}}" alt="{{client.name}}">
+    <img class="client-logo" src="{{client.image_path}}" alt="{{client.name}}" onclick="window.location = '{{client.link}}'">
     {% endfor %}
   </div>
 </div>
